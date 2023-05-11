@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetineOdor</title>
+
+
+    <link rel="stylesheet" href="./css/web_retineodor_style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="container">
+        <img src="./pdf_web_version/15.jpg" alt="i15">
+        <img src="./pdf_web_version/16.jpg" alt="i16">
+        <img src="./pdf_web_version/17.jpg" alt="i17">
+        <img src="./pdf_web_version/18.jpg" alt="i18">
+        <img src="./pdf_web_version/19.jpg" alt="i19">
+        <img src="./pdf_web_version/20.jpg" alt="i20">
+        <img src="./pdf_web_version/21.jpg" alt="i21">
+        <img src="./pdf_web_version/22.jpg" alt="i22">
+        <img src="./pdf_web_version/23.jpg" alt="i23">
+        <img src="./pdf_web_version/24.jpg" alt="i24">
+        <img src="./pdf_web_version/25.jpg" alt="i25">
+        <img src="./pdf_web_version/26.jpg" alt="i26">
+        <img src="./pdf_web_version/27.jpg" alt="i27">
+        <img src="./pdf_web_version/28.jpg" alt="i28">
+        <img src="./pdf_web_version/29.jpg" alt="i29">
+        <img src="./pdf_web_version/30.jpg" alt="i30">
+        <img src="./pdf_web_version/31.jpg" alt="i31">
+        <img src="./pdf_web_version/32.jpg" alt="i32">
+        <img src="./pdf_web_version/33.jpg" alt="i33">
+        <img src="./pdf_web_version/34.jpg" alt="i34">
+        <img src="./pdf_web_version/35.jpg" alt="i35">
+        <img src="./pdf_web_version/36.jpg" alt="i36">
+        <img src="./pdf_web_version/37.jpg" alt="i37">
+        <img src="./pdf_web_version/38.jpg" alt="i38">
+        <img src="./pdf_web_version/39.jpg" alt="i39">
+        <img src="./pdf_web_version/40.jpg" alt="i40">
+    </div>
+    <div class="fixed_box">
+        <a href="#container" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+            <img src="./images/top_icon.png" alt="top">
+        </a>
+    </div>
+    <div class="fixed_box_1">
+        <a href="#container" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+            <a href="#none"><img src="./images/home_icon.png" alt="home"></a>
+        </a>
+    </div>
+
+
+
+
+    <!--이동시 부드럽게 이동시키기 위해 추가한 구문 시작. script쪽 전부 삭제가능.-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);//움직이는 시간 조정
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <!--이동시 부드럽게 이동시키기 위해 추가한 구문 끝. 삭제가능.-->
+
+
+</body>
+
+</html>
