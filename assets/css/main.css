@@ -2599,6 +2599,11 @@ body.is-touch .main {
 		border-radius: 0 0 0 50px;
 
 	}
+
+	#one {
+		padding: 0 0 75px 0;
+	}
+
 }
 
 #chae {
